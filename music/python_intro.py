@@ -1,0 +1,1 @@
+print("hello Djangogirls tutorials!")
