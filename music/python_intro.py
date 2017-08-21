@@ -1,1 +1,0 @@
-print("hello Djangogirls tutorials!")
