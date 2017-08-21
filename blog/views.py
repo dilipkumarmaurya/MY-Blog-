@@ -154,8 +154,8 @@ def activate(request, uidb64, token):
         return render(request, 'blog/post_list.html')
 
 
-email_address = 'deployment334@gmail.com'
-email_password = 'Dipadi@god5'
+email_address = 'dilipkumar.15043@gmail.com'
+email_password = 'maurya0307'
 
 
 def send_verification_mail(email, msg):
