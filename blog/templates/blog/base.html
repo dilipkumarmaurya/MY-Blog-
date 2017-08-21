@@ -2,11 +2,12 @@
 <html>
 <head>
     <title>Dilip</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  
 </head>
 <body>
 <nav class="navbar navbar-inverse">
@@ -25,7 +26,7 @@
 
             <div class="collapse navbar-collapse" id="topNavBar">
                 <ul class="nav navbar-nav navbar-right">
-                    {% if user.is_authenticated %}
+                    
                     <li class="">
                         <a href="{% url 'post_draft_list' %}">
                             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>&nbsp;
@@ -48,7 +49,7 @@
 
                     </li>
 
-                    {% else %}
+            
                     <li class="">
                         <a href="{% url 'login' %}">
                             <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;
@@ -67,7 +68,7 @@
                     </li>
 
                 </ul>
-                {% endif %}
+                
             </div>
 
     </div>
