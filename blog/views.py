@@ -158,11 +158,12 @@ def activate(request, uidb64, token):
 
 email_address = 'dilipkumar.15043@gmail.com'
 email_password = 'maurya0307'
+email_user_name = 'dilip kumar maurya'
 
 
 def send_verification_mail(email, msg):
     print("send verificaion mail")
-    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server = smtplib.SMTP('smtp.gmail.com', 993)
     server.starttls()
     server.login(email_address, email_password)
     server.sendmail(email_address, email, msg)
